@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+       
         <meta charset="utf-8">
         <title>HTML: Lists</title>
+         <style>
+.mario { 
+color: red;
+  }
+</style>
     </head>
     <body>
 
 <h3>Hi there 👋</h3>
 
 <strong>whatkairos/whatkairos</strong> is a ✨ <em>special</em> ✨ repository because its <code>README.md</code> (this file) appears on your GitHub profile.
+      <canvas id="mycanvas"></canvas> 
 
 Here are some ideas to get you started:
 <ul>
@@ -22,13 +29,33 @@ Here are some ideas to get you started:
 <li> ⚡ Fun fact: i have 3 sisters 1 brother (so basicly 5) one of my sisters does javascript (so as my brother too).
 </ul>
    <img src="https://www5.minijuegosgratis.com/v3/games/thumbnails/222662_1.jpg">
-        
-  </body>
-</html>
-<style>
-.mario { 
-color: red;
-  }
-</style>
-<p>hello guys its a me a<span class= "mario"> yep mario</span> hey wheres luigi
+    <p>hello guys its a me a<span class= "mario"> yep mario</span> hey wheres luigi
     anyway byeee see ya <p>
+    
+  </body>
+     <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+ <script>
+    var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        size(400, 400); 
+        frameRate(30);
+        
+        // ProgramCodeGoesHere
+        fill(255, 255, 0);
+        ellipse(200, 200, 200, 200);
+        noFill();
+        stroke(0, 0, 0);
+        strokeWeight(2);
+        arc(200, 200, 150, 100, 0, PI);
+        fill(0, 0, 0);
+        ellipse(250, 200, 10, 10);
+        ellipse(153, 200, 10, 10);
+    }};
+
+    // Get the canvas that Processing-js will use
+    var canvas = document.getElementById("mycanvas"); 
+    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance = new Processing(canvas, sketchProc); 
+ </script>
+
+</html>
