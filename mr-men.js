@@ -6,6 +6,7 @@ function preload() {
 
 function setup() {
   createCanvas(1000, 1000);
+   var x=12;
 }
 
 function draw() {
@@ -13,7 +14,6 @@ strokeWeight(8);
 background(219, 247, 255);
 fill(228, 255, 92);
 ellipse(387,43,-91,95);
-var x=12;
 fill(255, 234, 0);
 ellipse(135,129,100,100);
 fill(18, 4, 4);
@@ -29,5 +29,5 @@ fill(13, 4, 4);
 text("mr happy (mr men)",10,14,67,75);
 fill(150, 135, 135);
 rect(49,226,411,274,1);  
- 
+x++;
 }
