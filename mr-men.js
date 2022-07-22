@@ -1,4 +1,5 @@
 let img;
+var x=12;
 
 function preload() {
   img = loadImage('bros1.png');
@@ -6,7 +7,7 @@ function preload() {
 
 function setup() {
   createCanvas(1000, 1000);
-   var x=12;
+   
 }
 
 function draw() {
@@ -29,5 +30,5 @@ fill(13, 4, 4);
 text("mr happy (mr men)",10,14,67,75);
 fill(150, 135, 135);
 rect(49,226,411,274,1);  
-x=x+1;
+x++;
 }
