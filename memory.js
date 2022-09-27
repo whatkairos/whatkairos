@@ -1,7 +1,7 @@
 new p5();
 
 let faces;
-
+let game;
 function preload() {
     faces = [
         loadImage("images/tile000.png")
@@ -9,6 +9,7 @@ function preload() {
 }
 
 function setup() {
+    game = new Game();
     createCanvas(400, 400);
 }
 
@@ -97,7 +98,6 @@ Tile.prototype.isUnderMouse = function (x, y) {
         y >= this.y && y <= this.y + this.size;
 };
 
-var game = new Game();
 
 mouseClicked = function () {
     if (game.gameOver) {
