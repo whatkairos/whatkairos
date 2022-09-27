@@ -68,6 +68,7 @@ var Game = function () {
             var tileX = i * 78 + 10;
             var tileY = j * 78 + 40;
             var tileFace = this.selected.pop();
+            console.log(tileFace);
             this.tiles.push(new Tile(tileX, tileY, tileFace));
         }
     }
