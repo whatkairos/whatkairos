@@ -82,7 +82,7 @@ Tile.prototype.draw = function () {
     if (this.isFaceUp) {
         image(this.face, this.x, this.y, this.size, this.size);
     } else {
-        image(getImage("avatars/leaf-green"), this.x, this.y, this.size, this.size);
+   //     image(getImage("avatars/leaf-green"), this.x, this.y, this.size, this.size);
     }
 };
 
