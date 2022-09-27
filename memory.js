@@ -1,12 +1,18 @@
 new p5();
 
-function setup() {
-  createCanvas(400, 400);
+let faces;
+
+function preload() {
+    faces = [
+        loadImage("images/tile000.png")
+    ];
 }
 
-var faces = [
-    loadImage("images/tile000.png")
-];
+function setup() {
+    createCanvas(400, 400);
+}
+
+
 // Now shuffle the elements of that array
 var shuffleArray = function (array) {
     var counter = array.length;
@@ -82,7 +88,7 @@ Tile.prototype.draw = function () {
     if (this.isFaceUp) {
         image(this.face, this.x, this.y, this.size, this.size);
     } else {
-   //     image(getImage("avatars/leaf-green"), this.x, this.y, this.size, this.size);
+        //     image(getImage("avatars/leaf-green"), this.x, this.y, this.size, this.size);
     }
 };
 
