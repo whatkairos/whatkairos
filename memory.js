@@ -4,7 +4,17 @@ let faces;
 let game;
 function preload() {
     faces = [
-        loadImage("images/tile000.png")
+        loadImage("images/tile000.png"),
+        loadImage("images/tile001.png"),
+        loadImage("images/tile002.png"),
+        loadImage("images/tile003.png"),
+        loadImage("images/tile004.png"),
+        loadImage("images/tile005.png"),
+        loadImage("images/tile006.png"),
+        loadImage("images/tile007.png"),
+        loadImage("images/tile008.png"),
+        loadImage("images/tile009.png"),
+        loadImage("images/tile010.png"),
     ];
 }
 
@@ -68,7 +78,6 @@ var Game = function () {
             var tileX = i * 78 + 10;
             var tileY = j * 78 + 40;
             var tileFace = this.selected.pop();
-            console.log(tileFace);
             this.tiles.push(new Tile(tileX, tileY, tileFace));
         }
     }
