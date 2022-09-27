@@ -91,8 +91,6 @@ Tile.prototype.isUnderMouse = function (x, y) {
         y >= this.y && y <= this.y + this.size;
 };
 
-background(255, 255, 255);
-
 var game = new Game();
 
 mouseClicked = function () {
