@@ -186,4 +186,4 @@ draw = function () {
     }
 };
 
-noLoop();
+// noLoop();
