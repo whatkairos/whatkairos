@@ -179,9 +179,9 @@ var Game = function () {
 
 Tile.prototype.draw = function () {
     if (this.hover) {
-        fill(168, 168, 168);
-    } else {
         fill(255, 255, 255);
+    } else {
+        fill(168, 168, 168);
     }
     strokeWeight(2);
     rect(this.x, this.y, this.size, this.size, 10);
