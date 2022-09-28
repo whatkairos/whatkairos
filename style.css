@@ -1,6 +1,14 @@
 #nice {
     background: red;
-    width:30%;
-    float:right;
-    margin-left:1px;
+    width: 30%;
+    float: right;
+    margin-left: 1px;
+}
+
+canvas {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 5px;
+    top: 5px
 }

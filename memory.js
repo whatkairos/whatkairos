@@ -276,7 +276,7 @@ draw = function () {
     text("Player 1: " + game.players[1].numMatches, 234, 34);
     var t = millis();
     var playtime = t - game.t0;
-    text(playtime, 179, 386);
+    text(Math.floor(playtime / 1000), 179, 386);
     if (playtime > 300000) {
         game.gameOver = true;
         textSize(72);
